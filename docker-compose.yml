@@ -5,6 +5,10 @@ services:
     container_name: ansible
     build: 
       context: ./ansible
+
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    
     volumes:
       - ${BIND_DIR}/_data:/_data
     restart: unless-stopped
