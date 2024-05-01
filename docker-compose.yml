@@ -5,10 +5,6 @@ services:
     container_name: ansible
     build: 
       context: ./ansible
-      args: 
-        - FOO=${FOO}
-    environment:
-      BAR: ${BAR}_sometext
     volumes:
       - ${BIND_DIR}/_data:/_data
-    restart: never
+    restart: unless-stopped' 
