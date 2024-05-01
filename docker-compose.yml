@@ -7,4 +7,5 @@ services:
       context: ./ansible
     volumes:
       - ${BIND_DIR}/_data:/_data
-    restart: unless-stopped' 
+    restart: unless-stopped
+    
