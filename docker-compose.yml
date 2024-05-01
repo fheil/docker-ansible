@@ -3,6 +3,8 @@ version: '3.5'
 services:
   ansible:
     container_name: ansible
+    hostname: dar    # dar stands for d_ocker a_nsible r_unner
+    
     build: 
       context: ./ansible
 
