@@ -8,3 +8,5 @@ COPY config/profile.local.sh /etc/profile.d/profile.local.sh
 COPY config/.bashrc /root/.bashrc
 
 WORKDIR /ansible
+
+ENTRYPOINT /bin/bash
