@@ -5,6 +5,6 @@ RUN apk update && apk add --no-cache bash joe openssh-client ca-certificates ans
 COPY config/profile.local.sh /etc/profile.d/profile.local.sh
 
 # Configure .bashrc for root
-COPY config/bashrc /root/.bashrc
+COPY config/.bashrc /root/.bashrc
 
 WORKDIR /ansible
