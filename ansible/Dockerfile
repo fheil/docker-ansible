@@ -9,4 +9,4 @@ COPY config/.bashrc /root/.bashrc
 
 WORKDIR /ansible
 
-ENTRYPOINT ["/bin/bash", "-l", "-c"]
+ENTRYPOINT ["/bin/bash .bashrc", "-l", "-c"]
